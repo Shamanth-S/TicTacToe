@@ -8,12 +8,12 @@ public class TicTacToe {
         initial();
         board();
         
-        boolean gameOver = false;
-        while (!gameOver) {
+        boolean game = false;
+        while (!game) {
             play();
             board();
             if (win() || draw()) {
-                gameOver = true;
+                game = true;
             }
             current = (current == 'X') ? 'O' : 'X';
         }
